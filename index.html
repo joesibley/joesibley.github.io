@@ -8,13 +8,31 @@
 <meta name="description" content="Joe's Leaving Speech">
 <link rel="stylesheet" href="main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Javascript -->
 <script type='text/javascript'>
+
+$(document).keydown(function(e){
+    if (e.keyCode == 81) { 
+       document.getElementById('q').play();
+       return false;
+    }
+    if (e.keyCode == 87) { 
+       document.getElementById('w').play();
+       return false;
+    }
+});
+
 </script>
 
 </head>
     
 <body>
 
+<!--Sounds-->
+<audio id="q" src="sounds/yes.mp3"></audio>
+<audio id="w" src="sounds/no.mp3"></audio>
+<!-- End Sounds -->
+    
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
