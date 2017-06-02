@@ -2,6 +2,78 @@ html {
 }
 
 body {
-    background: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background: #2a1440 url(images/Background_01.jpg) no-repeat top center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: 100%;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 30px;
+}
+#wrapper{
+	width: 100%;
+	height:100%;
+	padding: 0 0 400px 0;
+	margin: 0 auto;
+}
+#header{
+	width:100%;
+	display: block;
+}
+#header img{
+	width: 70%;
+	padding: 0;
+	margin: 0;
+}
+#panel_01{
+	width: 100%;
+	padding: 40px 0 0 0;
+}
+#panel_01_left img{
+	width: 80%;
+	padding-left:20%;
+}
+#panel_01_right img{
+	width:100%;
+}
+#panel_01_left{
+	width: 50%;
+	float:left;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+#panel_01_right{
+	width: 35%;
+	float:left;
+	padding-left: 0;
+	padding-right: 10%;
+	padding-bottom:50px;
+	text-align: left;
+}
+.clear{
+	display:block;
+	clear: both;
+}
+.floatleft{
+	float: left;
+}
+#content{
+	text-align: left;
+	width: 80%;
+	padding-left:10%;
+	padding-right:10%;
+	padding-bottom: 100px;
+}
+#table{
+	width:100%;
+}
+#table .floatleft{
+	width:20%;
 }
