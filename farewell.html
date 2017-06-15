@@ -186,6 +186,13 @@ $(document).keydown(function(e){
        return false;
     }
 	
+	//Easter Eggs
+	
+	if (e.keyCode == 16) { 
+       document.getElementById('shift').play();
+       return false;
+    }	
+	
 });
 
 </script>
@@ -233,6 +240,8 @@ $(document).keydown(function(e){
 <audio id="up" src="sounds/up.mp3"></audio>
 <audio id="right" src="sounds/right.mp3"></audio>
 <audio id="down" src="sounds/down.mp3"></audio>
+<!--Easter Eggs-->
+<audio id="shift" src="sounds/shift.mp3"></audio>
 <!-- End Sounds -->
 
 </head>
@@ -242,70 +251,74 @@ $(document).keydown(function(e){
 
 
 <div id="wrapper">
-	<div id="header" class="clear"><img src="images/Logo_Lockup_01.png" /></div>
-	<div id="panel_01" class="clear">
-		<div id="panel_01_left"><img src="images/Keyboard.png" /></div>
-		<div id="panel_01_right">
-			<div><img src="images/Copy_01.png"></div>
+	<div class="clear" id="header"><img src="images/Logo_Lockup_01.png" /></div>
+	<div class="clear" id="content">
+		<div class="floatleft" id="leftbox">
 			<p>This temporary website is an incredibly elaborate attempt to avoid talking in public. If it were up to me, I’d say really nice things about all of you—but it isn’t up to me, it’s up to you. Do with me as you please.</p>
-			<p>To really spice things up hit the number '0' on your keyboard and my speech will be accompanied by Hans Zimmer—It'll probably make it the most epic farewell speech of all time.</p>
+			<p><b>To really spice things up hit the number '0' on your keyboard and my speech will be accompanied by Hans Zimmer—it'll probably make it the most epic farewell speech of all time.</b></p>
 		</div>
+		<div class="floatleft" id="rightbox"><img src="images/Keyboard.png" /></div>
 	</div>
-	<div id="content" class="clear">
-		<div class="clear" id="table">
-			<div class="floatleft">
-					Arrow left - Clear Throat<br />
-					Arrow Up - Awkward Laugh<br />
-					Arrow Right - Applause<br />				
-					Arrow Down - Laughter
-			</div>
-			<div id="table1" class="floatleft">
-					0 - Hans Zimmer<br /> 		
-					1 - Thank you<br />
-					2 - I am<br />
-					3 - You are<br />
-					4 - I'll miss<br />
-					5 - Clemenger<br />
-					6 - I want<br />
-					7 - It has been<br />
-					8 - All<br />
-					9 - You<br />						
-			</div>
-			<div id="table2" class="floatleft">
-					Q - Great<br />
-					W - Extraordinary<br />
-					E - Dead inside<br />
-					R - Fucking<br />
-					T - Fuck<br />
-					Y - Fucked<br />
-					U - Everyone<br />
-					I - To<br />
-					O - Just kidding<br />
-					P - Good<br />					
-			</div>
-			<div id="table3" class="floatleft">
-					A - Giles Watson<br />
-					S - St Kilda Road<br />
-					D - Friend<br />
-					F - Really clever<br />
-					G - At your job<br />
-					H - And <br />
-					J - Leave<br />
-					K - Is<br />
-					L - A<br />					
-			</div>	
-			<div id="table4" class="floatleft">
-					Z - A credit on Graham<br />
-					X - Vogon<br />
-					C - Awesome<br />
-					V - Awards<br />
-					B - Give it<br />
-					N - Really<br />
-					M - Was<br />			
-			</div>
+	<div class="clear" id="controls">
+		<div class="floatleft">
+		0 - Hans Zimmer<br />
+		<br />
+		Arrow left - [Clear Throat]<br />
+		Arrow up - [Laugh]<br />
+		Arrow right - [Applause]<br />
+		Arrow down - [Laugh]<br />
+		<br />
 		</div>
+		<div class="floatleft">
+		1 - Thank<br />
+		2 - I am<br />
+		3 - Are<br />
+		4 - I'll miss<br />
+		5 - Clemenger<br />
+		6 - I want<br />
+		7 - It has been<br />
+		8 - All<br />
+		9 - You<br />
+		<br />
+		</div>
+		<div class="floatleft">
+		Q - But<br />
+		W - Extraordinary<br />
+		E - For<br />
+		R - Fucking<br />
+		T - Fuck<br />
+		Y - Fucked<br />
+		U - Everyone<br />
+		I - To<br />
+		O - Nah just kidding<br />
+		P - Good<br />
+		<br />
+		</div>
+		<div class="floatleft">
+		A - Giles Watson<br />
+		S - St Kilda Road<br />
+		D - Friend<br />
+		F - Clever<br />
+		G - At your job<br />
+		H - And<br />
+		J - Leave<br />
+		K - Is<br />
+		L - A<br />
+		<br />
+		</div>
+		<div class="floatleft">
+		Z - A credit on Graham<br />
+		X - Vogon<br />
+		C - Awesome<br />
+		V - Everything<br />
+		B - Give it<br />
+		N - Really<br />
+		M - Was<br />
+		<br />
+		</div>
+		
 	</div>
-<div>
+</div>
 
 </body>
 </html>
